@@ -1,0 +1,14 @@
+# 05-pathtraversal dorks
+inurl:../
+inurl:%2e%2e/
+inurl:%252e%252e/
+inurl:../../../etc/passwd
+inurl:../../../../etc/passwd
+inurl:/etc/passwd &inurl:php
+inurl:/proc/self/environ
+inurl:/boot.ini
+inurl:/windows/win.ini
+inurl:download.php?file=
+inurl:get.php?file=
+inurl:fetch.php?file=
+inurl:retrieve.php?file=

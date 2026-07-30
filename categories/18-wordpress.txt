@@ -1,0 +1,35 @@
+# 18-wordpress dorks
+inurl:wp-content
+inurl:wp-includes
+inurl:wp-admin
+inurl:wp-login
+inurl:wp-config
+inurl:wp-json
+inurl:xmlrpc.php
+inurl:wp-cron.php
+inurl:wp-load.php
+inurl:wp-settings.php
+inurl:wp-blog-header.php
+inurl:wp-signup.php
+inurl:wp-register.php
+inurl:wp-activate.php
+inurl:wp-trackback.php
+inurl:wp-comments
+inurl:wp-mail
+inurl:wp-links
+inurl:wp-cron
+inurl:/wp-content/uploads/
+inurl:/wp-content/plugins/
+inurl:/wp-content/themes/
+inurl:/wp-content/cache/
+inurl:/wp-content/backup/
+inurl:/wp-content/debug.log
+filetype:xml wp-config
+filetype:txt wp-config
+filetype:php wp-config
+intitle:"WordPress" "Installation"
+intitle:"WordPress" "Admin"
+intitle:"WordPress" "Login"
+inurl:wp-admin/admin-ajax.php
+inurl:wp-admin/install.php
+inurl:wp-admin/upgrade.php

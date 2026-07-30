@@ -1,0 +1,39 @@
+# 19-joomla dorks
+inurl:/components/com_
+inurl:/modules/mod_
+inurl:/plugins/
+inurl:/templates/ &inurl:joomla
+inurl:/administrator/
+inurl:/administrator/index.php
+inurl:/administrator/login
+inurl:/administrator/backups
+inurl:/administrator/components
+inurl:/components/com_jce
+inurl:/components/com_virtuemart
+inurl:/components/com_hikashop
+inurl:/components/com_akeeba
+inurl:/components/com_joomla
+inurl:/components/com_content
+inurl:/components/com_users
+inurl:/components/com_search
+inurl:/components/com_contact
+inurl:/components/com_newsfeeds
+inurl:/components/com_weblinks
+inurl:/components/com_banners
+inurl:/plugins/system/
+inurl:/plugins/content/
+inurl:/plugins/user/
+inurl:/plugins/authentication/
+inurl:/plugins/editors/
+inurl:/plugins/search/
+inurl:/plugins/extension/
+inurl:/modules/mod_
+inurl:/cache/com_
+inurl:/logs/joomla
+inurl:/tmp/joomla
+inurl:/backups/joomla
+intitle:"Joomla! Web Installer"
+intitle:"Joomla! Administration"
+intitle:"Joomla! Login"
+filetype:php configuration
+filetype:php "JConfig"

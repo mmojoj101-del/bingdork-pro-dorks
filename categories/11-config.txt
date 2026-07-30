@@ -1,0 +1,24 @@
+# 11-config dorks
+filetype:xml "config"
+filetype:conf "server"
+filetype:conf "apache"
+filetype:conf "httpd"
+filetype:conf "nginx"
+filetype:conf "php"
+filetype:yml "application"
+filetype:yaml "application"
+filetype:json "config"
+filetype:ini "config"
+filetype:cfg "config"
+filetype:config "database"
+filetype:config "password"
+filetype:config "user"
+inurl:config.php
+inurl:config.inc
+inurl:configuration.php
+inurl:settings.php
+inurl:dbconfig.php
+inurl:wp-config.php
+inurl:config/config
+inurl:/include/config
+inurl:/inc/config

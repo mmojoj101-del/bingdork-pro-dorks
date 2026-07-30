@@ -1,0 +1,886 @@
+# ====================================================================
+# BingDork Pro - Premium Dork Collection
+# ====================================================================
+# Categories:
+#   1. SQL Injection
+#   2. Cross-Site Scripting (XSS)
+#   3. Local File Inclusion (LFI/RFI)
+#   4. Remote Code Execution (RCE)
+#   5. Path Traversal
+#   6. Information Disclosure
+#   7. Sensitive Files
+#   8. Admin Panels
+#   9. Exposed Databases
+#  10. Backup Files
+#  11. Configuration Files
+#  12. Directory Listing
+#  13. Open Redirects
+#  14. Server Status Pages
+#  15. API Endpoints
+#  16. Cloud/DevOps
+#  17. IoT Devices
+#  18. WordPress
+#  19. Joomla
+#  20. Generic Vulns
+# ====================================================================
+
+# =============================================================
+# 1. SQL INJECTION
+# =============================================================
+inurl:index.php?id=
+inurl:product.php?id=
+inurl:category.php?id=
+inurl:item.php?id=
+inurl:page.php?id=
+inurl:news.php?id=
+inurl:article.php?id=
+inurl:detail.php?id=
+inurl:show.php?id=
+inurl:view.php?id=
+inurl:read.php?id=
+inurl:main.php?id=
+inurl:content.php?id=
+inurl:section.php?id=
+inurl:shop.php?id=
+inurl:cat.php?id=
+inurl:subcat.php?id=
+inurl:nav.php?id=
+inurl:thread.php?id=
+inurl:topic.php?id=
+inurl:msg.php?id=
+inurl:post.php?id=
+inurl:story.php?id=
+inurl:gallery.php?id=
+inurl:image.php?id=
+inurl:download.php?id=
+inurl:file.php?id=
+inurl:doc.php?id=
+inurl:video.php?id=
+inurl:player.php?id=
+inurl:id= &inurl:php
+inurl:option=com_ &inurl:id=
+inurl:&id= &inurl:php?id=
+inurl:&Itemid= &inurl:id=
+inurl:&catid= &inurl:php
+inurl:&pageid= &inurl:php
+intitle:"sql injection" ext:log
+
+# =============================================================
+# 2. XSS - Cross Site Scripting
+# =============================================================
+inurl:search.php?q=
+inurl:query.php?q=
+inurl:find.php?q=
+inurl:lookup.php?q=
+inurl:go.php?url=
+inurl:out.php?url=
+inurl:redirect.php?url=
+inurl:click.php?url=
+inurl:link.php?url=
+inurl:jump.php?url=
+inurl:track.php?url=
+inurl:login.php?redirect=
+inurl:login.php?return=
+inurl:login.php?url=
+inurl:error.php?msg=
+inurl:err.php?msg=
+inurl:message.php?msg=
+inurl:view.php?file=
+inurl:open.php?file=
+inurl:load.php?file=
+inurl:include.php?file=
+inurl:require.php?file=
+inurl:page.php?file=
+inurl:template.php?file=
+inurl:theme.php?file=
+inurl:style.php?file=
+inurl:lang.php?file=
+inurl:language.php?file=
+
+# =============================================================
+# 3. LFI/RFI - File Inclusion
+# =============================================================
+inurl:index.php?page=
+inurl:index.php?file=
+inurl:index.php?path=
+inurl:index.php?folder=
+inurl:index.php?dir=
+inurl:index.php?include=
+inurl:index.php?inc=
+inurl:index.php?template=
+inurl:index.php?view=
+inurl:index.php?content=
+inurl:index.php?section=
+inurl:index.php?module=
+inurl:index.php?component=
+inurl:index.php?option=
+inurl:page= &inurl:php
+inurl:file= &inurl:php
+inurl:path= &inurl:php
+inurl:template= &inurl:php
+inurl:inc= &inurl:php
+inurl:include= &inurl:php
+
+# =============================================================
+# 4. RCE - Remote Code Execution
+# =============================================================
+inurl:cmd=
+inurl:exec=
+inurl:command=
+inurl:execute=
+inurl:shell=
+inurl:run=
+inurl:system=
+inurl:passthru=
+inurl:cmd.exe
+inurl:shell.php
+inurl:rce.php
+inurl:webshell
+inurl:backdoor
+inurl:shell.cgi
+inurl:cmd.cgi
+inurl:exec.cgi
+intitle:"index of" inurl:cgi-bin
+inurl:cgi-bin/ &ext:cgi
+inurl:phpinfo.php
+intitle:"phpinfo" ext:php
+inurl:info.php
+
+# =============================================================
+# 5. PATH TRAVERSAL
+# =============================================================
+inurl:../
+inurl:%2e%2e/
+inurl:%252e%252e/
+inurl:../../../etc/passwd
+inurl:../../../../etc/passwd
+inurl:/etc/passwd &inurl:php
+inurl:/proc/self/environ
+inurl:/boot.ini
+inurl:/windows/win.ini
+inurl:download.php?file=
+inurl:get.php?file=
+inurl:fetch.php?file=
+inurl:retrieve.php?file=
+
+# =============================================================
+# 6. INFORMATION DISCLOSURE
+# =============================================================
+intitle:"index of" "backup"
+intitle:"index of" "admin"
+intitle:"index of" "password"
+intitle:"index of" "config"
+intitle:"index of" "database"
+intitle:"index of" "sql"
+intitle:"index of" "db"
+intitle:"index of" "dump"
+intitle:"index of" "export"
+intitle:"index of" "private"
+intitle:"index of" "secret"
+intitle:"index of" "confidential"
+intitle:"index of" "log"
+intitle:"index of" "logs"
+intitle:"index of" "debug"
+intitle:"index of" "error_log"
+intitle:"index of" "access_log"
+intitle:"index of" "wp-config"
+intitle:"index of" ".git"
+intitle:"index of" ".svn"
+intitle:"index of" ".env"
+intitle:"index of" "libraries"
+intitle:"index of" "uploads"
+intitle:"index of" "downloads"
+intitle:"index of" "src"
+intitle:"index of" "source"
+intitle:"index of" "data"
+intitle:"index of" "cache"
+intitle:"index of" "tmp"
+intitle:"index of" "temp"
+intitle:"index of" "files"
+intitle:"index of" "images"
+intitle:"index of" "css"
+intitle:"index of" "js"
+intitle:"index of" "javascript"
+intitle:"index of" "phpMyAdmin"
+intitle:"index of" "mysql"
+intitle:"index of" "phpmyadmin"
+intitle:"index of" "mail"
+intitle:"index of" "webmail"
+intitle:"index of" "roundcube"
+intitle:"index of" "squirrelmail"
+
+# =============================================================
+# 7. SENSITIVE FILES
+# =============================================================
+filetype:sql "password"
+filetype:sql "insert into" "password"
+filetype:sql "create table" "user"
+filetype:sql "dump"
+filetype:sql "values" "admin"
+filetype:sql "INSERT"
+filetype:sql "username"
+filetype:bak "password"
+filetype:bak "admin"
+filetype:bak "config"
+filetype:bak "backup"
+filetype:old "password"
+filetype:old "config"
+filetype:txt "password"
+filetype:log "password"
+filetype:log "error"
+filetype:log "debug"
+filetype:log "Failed password"
+filetype:log "root:" 
+filetype:env "DB_PASSWORD"
+filetype:env "DB_HOST"
+filetype:env "API_KEY"
+filetype:env "SECRET_KEY"
+filetype:env "AWS_SECRET"
+filetype:env "PASSWORD"
+filetype:env "DATABASE_URL"
+filetype:env "REDIS_URL"
+filetype:conf "password"
+filetype:conf "mysql"
+filetype:conf "config"
+filetype:ini "password"
+filetype:ini "mysql"
+filetype:ini "config"
+filetype:xls "password"
+filetype:xlsx "password"
+filetype:pdf "password"
+filetype:pdf "confidential"
+filetype:doc "password"
+filetype:docx "password"
+filetype:xml "password"
+filetype:xml "config"
+filetype:json "password"
+filetype:json "api_key"
+filetype:json "secret"
+filetype:json "token"
+filetype:yaml "password"
+filetype:yaml "api_key"
+filetype:yml "password"
+filetype:yml "api_key"
+
+# =============================================================
+# 8. ADMIN PANELS
+# =============================================================
+intitle:"admin" "login"
+intitle:"administrator" "login"
+intitle:"admin panel"
+intitle:"control panel"
+intitle:"dashboard" "login"
+inurl:admin/login
+inurl:admin/index
+inurl:admin/admin
+inurl:administrator/index
+inurl:admin/control
+inurl:admin/dashboard
+inurl:admin/panel
+inurl:admin/cms
+inurl:admin/portal
+inurl:admin/manage
+inurl:admin/signin
+inurl:admin/auth
+inurl:login/admin
+inurl:login/administrator
+inurl:cms/admin
+inurl:wp-admin
+inurl:joomla/administrator
+inurl:admin/login.php
+inurl:user/login
+inurl:user/admin
+inurl:panel/admin
+inurl:portal/admin
+
+# =============================================================
+# 9. EXPOSED DATABASES
+# =============================================================
+intitle:"phpMyAdmin" "Welcome"
+intitle:"phpMyAdmin" "server"
+intitle:"phpPgAdmin"
+intitle:"Adminer"
+intitle:"phpmyadmin" "mysql"
+intitle:"MySQL Error"
+intitle:"SQL Server"
+intitle:"phpmyadmin" "username" "password"
+inurl:phpMyAdmin/index
+inurl:phpMyAdmin/main
+inurl:phpmyadmin/index.php
+inurl:/sql/admin
+inurl:/mysql/admin
+inurl:/db/admin
+inurl:/database/admin
+inurl:/mysqladmin
+inurl:/phpmyadmin
+inurl:/pma
+inurl:/adminer
+inurl:/mysqlmanager
+
+# =============================================================
+# 10. BACKUP FILES
+# =============================================================
+filetype:bak
+filetype:old
+filetype:backup
+filetype:swp
+filetype:swo
+filetype:swn
+filetype:~ &inurl:php
+filetype:tar &inurl:backup
+filetype:gz &inurl:backup
+filetype:zip &inurl:backup
+filetype:rar &inurl:backup
+filetype:7z &inurl:backup
+filetype:sql &inurl:backup
+ext:bak "config"
+ext:bak "db"
+ext:bak "database"
+ext:old "config"
+ext:old "db"
+ext:old "sql"
+ext:backup "sql"
+ext:backup "db"
+ext:backup "config"
+inurl:backup/file
+inurl:backup/db
+inurl:backup/sql
+inurl:backup/mysql
+inurl:backup/database
+inurl:backup/old
+inurl:backup/site
+
+# =============================================================
+# 11. CONFIGURATION FILES
+# =============================================================
+filetype:xml "config"
+filetype:conf "server"
+filetype:conf "apache"
+filetype:conf "httpd"
+filetype:conf "nginx"
+filetype:conf "php"
+filetype:yml "application"
+filetype:yaml "application"
+filetype:json "config"
+filetype:ini "config"
+filetype:cfg "config"
+filetype:config "database"
+filetype:config "password"
+filetype:config "user"
+inurl:config.php
+inurl:config.inc
+inurl:configuration.php
+inurl:settings.php
+inurl:dbconfig.php
+inurl:wp-config.php
+inurl:config/config
+inurl:/include/config
+inurl:/inc/config
+
+# =============================================================
+# 12. DIRECTORY LISTING - Find Open Directories
+# =============================================================
+intitle:"Index of /"
+intitle:"Index of /admin"
+intitle:"Index of /backup"
+intitle:"Index of /config"
+intitle:"Index of /database"
+intitle:"Index of /db"
+intitle:"Index of /download"
+intitle:"Index of /files"
+intitle:"Index of /htdocs"
+intitle:"Index of /httpdocs"
+intitle:"Index of /images"
+intitle:"Index of /includes"
+intitle:"Index of /js"
+intitle:"Index of /logs"
+intitle:"Index of /mail"
+intitle:"Index of /private"
+intitle:"Index of /public"
+intitle:"Index of /root"
+intitle:"Index of /secure"
+intitle:"Index of /server"
+intitle:"Index of /src"
+intitle:"Index of /tmp"
+intitle:"Index of /upload"
+intitle:"Index of /uploads"
+intitle:"Index of /web"
+intitle:"Index of /webroot"
+intitle:"Index of /www"
+intitle:"Index of /wwwroot"
+intitle:"Index of /wp-content"
+intitle:"Index of /wp-includes"
+intitle:"Listing of /"
+intitle:"Directory Listing"
+intitle:"directory listing"
+intitle:"folder listing"
+intitle:"Apache Directory"
+intitle:"Apache/"
+
+# =============================================================
+# 13. OPEN REDIRECT
+# =============================================================
+inurl:redirect.php?url
+inurl:redirect.asp?url
+inurl:redirect.jsp?url
+inurl:redirect.aspx?url
+inurl:go.php?url
+inurl:go.asp?url
+inurl:go.jsp?url
+inurl:go.aspx?url
+inurl:out.php?url
+inurl:out.asp?url
+inurl:out.jsp?url
+inurl:out.aspx?url
+inurl:url.php?url
+inurl:url.asp?url
+inurl:url.jsp?url
+inurl:link.php?url
+inurl:link.asp?url
+inurl:jump.php?url
+inurl:click.php?url
+inurl:forward.php?url
+inurl:forward.asp?url
+inurl:redirect.php?url=
+inurl:redirect.asp?url=
+inurl:redirect.php?u=
+inurl:redirect.php?to=
+inurl:redirect.php?goto=
+inurl:redirect.php?next=
+inurl:redirect.php?target=
+inurl:redirect.php?dest=
+inurl:redirect.php?desti=
+inurl:redirect.php?location=
+inurl:redirect.php?uri=
+
+# =============================================================
+# 14. SERVER STATUS & DEBUG PAGES
+# =============================================================
+intitle:"Apache Status" "Server Version"
+intitle:"Apache Status"
+intitle:"Apache Server Status"
+intitle:"Server Status"
+intitle:"Server Information"
+intitle:"PHP Error"
+intitle:"PHP Parse error"
+intitle:"PHP Fatal error"
+intitle:"Warning: mysql_connect"
+intitle:"Warning: include"
+intitle:"Warning: require"
+intitle:"Fatal error"
+intitle:"MySQL Error"
+intitle:"SQL Error"
+intitle:"ODBC Error"
+intitle:"Database Error"
+intitle:"Error Occurred"
+intitle:"Stack Trace"
+intitle:"Debug Mode"
+intitle:"Debug Output"
+intitle:"ASP.NET Error"
+intitle:"Tomcat Error"
+intitle:"404 Not Found"
+intitle:"500 Internal Server"
+intitle:"403 Forbidden"
+intitle:"401 Unauthorized"
+inurl:/server-status
+inurl:/server-info
+inurl:/status
+inurl:/debug
+inurl:/_debug
+inurl:/health
+inurl:/healthcheck
+inurl:/actuator/health
+inurl:/actuator/info
+inurl:/actuator/env
+
+# =============================================================
+# 15. API ENDPOINTS
+# =============================================================
+inurl:/api/
+inurl:/api/v1/
+inurl:/api/v2/
+inurl:/api/v3/
+inurl:/rest/
+inurl:/rest/v1/
+inurl:/graphql
+inurl:/swagger
+inurl:/swagger-ui
+inurl:/swagger.json
+inurl:/docs/swagger
+inurl:/api-docs
+inurl:/openapi
+inurl:/openapi.json
+inurl:/api/documentation
+inurl:/api/swagger
+inurl:/api/health
+inurl:/api/status
+inurl:/api/info
+inurl:/api/version
+inurl:/api/config
+inurl:/api/users
+inurl:/api/admin
+inurl:/api/login
+inurl:/api/auth
+inurl:/api/register
+inurl:/api/search
+inurl:/api/query
+inurl:/api/data
+inurl:/api/export
+inurl:/api/import
+inurl:/api/logs
+inurl:/api/docs
+inurl:/api/console
+inurl:/api/upload
+inurl:/api/download
+inurl:/api/file
+inurl:/api/files
+inurl:/api/asset
+inurl:/api/assets
+inurl:/api/oauth
+inurl:/api/token
+inurl:/api/refresh
+inurl:/api/graphql
+inurl:/api/webhook
+inurl:/api/callback
+
+# =============================================================
+# 16. CLOUD & DEVOPS
+# =============================================================
+filetype:env "AWS"
+filetype:env "AZURE"
+filetype:env "GCP"
+filetype:env "GOOGLE"
+filetype:env "CLOUD"
+filetype:env "S3"
+filetype:env "BUCKET"
+filetype:env "SECRET"
+filetype:env "KEY"
+filetype:yml "aws"
+filetype:yml "s3"
+filetype:yml "bucket"
+filetype:yml "cloud"
+filetype:yaml "aws"
+filetype:yaml "s3"
+filetype:yaml "bucket"
+filetype:yaml "cloud"
+filetype:json "aws"
+filetype:json "s3"
+filetype:json "bucket"
+filetype:json "cloud"
+filetype:toml "aws"
+filetype:toml "s3"
+filetype:toml "bucket"
+filetype:tf "aws"
+filetype:tf "s3"
+filetype:tf "bucket"
+filetype:tfvars "aws"
+filetype:tfvars "s3"
+filetype:tfvars "secret"
+filetype:tfstate
+intitle:"Index of" "s3"
+intitle:"Index of" ".aws"
+intitle:"Index of" ".azure"
+intitle:"Index of" ".gcp"
+intitle:"Index of" "docker"
+intitle:"Index of" "kubernetes"
+intitle:"Index of" "k8s"
+inurl:s3.amazonaws
+inurl:storage.googleapis
+inurl:blob.core.windows
+inurl:s3.us-
+inurl:s3.eu-
+inurl:s3.ap-
+inurl:s3.sa-
+inurl:s3.ca-
+inurl:digitaloceanspaces
+inurl:linodeobjects
+inurl:wasabisys
+inurl:backblazeb2
+inurl:cloudfront.net
+inurl:s3-website
+inurl:docker-compose.yml
+inurl:Dockerfile
+inurl:kubernetes
+inurl:kubeconfig
+inurl:.kube/config
+
+# =============================================================
+# 17. IoT & CAMERAS
+# =============================================================
+intitle:"webcam" "live"
+intitle:"webcam" "stream"
+intitle:"webcam" "viewer"
+intitle:"webcam 7"
+intitle:"Live View / - AXIS"
+intitle:"Axis" "Camera"
+intitle:"Network Camera"
+intitle:"IP Camera"
+intitle:"DVR" "live"
+intitle:"DVR" "view"
+intitle:"Hikvision"
+intitle:"Dahua"
+intitle:"NVR"
+intitle:"RTSP"
+inurl:view/view.shtml
+inurl:view/index.shtml
+inurl:viewer/live
+inurl:control/camera
+inurl:webcam/main
+inurl:axis-cgi
+inurl:viewerframe?mode=
+inurl:mjpg/video.mjpg
+inurl:videostream.cgi
+inurl:snapshot.cgi
+inurl:cgi-bin/snapshot
+inurl:cgi-bin/video
+inurl:cgi-bin/view
+inurl:cgi-bin/webcam
+inurl:cgi-bin/camera
+inurl:top.htm inurl:current
+inurl:guestimage.html
+inurl:livestream
+inurl:liveview
+inurl:livecam
+intitle:"EvoCam"
+intitle:"WebCamXP"
+intitle:"iSPY"
+intitle:"Blue Iris"
+intitle:"Motion" "Camera"
+intitle:"ZoneMinder"
+inurl:8080/cgi-bin
+inurl:8081/cgi-bin
+inurl:554/stream
+inurl:1935/stream
+inurl:rtsp://
+inurl:rtmp://
+
+# =============================================================
+# 18. WORDPRESS
+# =============================================================
+inurl:wp-content
+inurl:wp-includes
+inurl:wp-admin
+inurl:wp-login
+inurl:wp-config
+inurl:wp-json
+inurl:xmlrpc.php
+inurl:wp-cron.php
+inurl:wp-load.php
+inurl:wp-settings.php
+inurl:wp-blog-header.php
+inurl:wp-signup.php
+inurl:wp-register.php
+inurl:wp-activate.php
+inurl:wp-trackback.php
+inurl:wp-comments
+inurl:wp-mail
+inurl:wp-links
+inurl:wp-cron
+inurl:/wp-content/uploads/
+inurl:/wp-content/plugins/
+inurl:/wp-content/themes/
+inurl:/wp-content/cache/
+inurl:/wp-content/backup/
+inurl:/wp-content/debug.log
+filetype:xml wp-config
+filetype:txt wp-config
+filetype:php wp-config
+intitle:"WordPress" "Installation"
+intitle:"WordPress" "Admin"
+intitle:"WordPress" "Login"
+inurl:wp-admin/admin-ajax.php
+inurl:wp-admin/install.php
+inurl:wp-admin/upgrade.php
+
+# =============================================================
+# 19. JOOMLA
+# =============================================================
+inurl:/components/com_
+inurl:/modules/mod_
+inurl:/plugins/
+inurl:/templates/ &inurl:joomla
+inurl:/administrator/
+inurl:/administrator/index.php
+inurl:/administrator/login
+inurl:/administrator/backups
+inurl:/administrator/components
+inurl:/components/com_jce
+inurl:/components/com_virtuemart
+inurl:/components/com_hikashop
+inurl:/components/com_akeeba
+inurl:/components/com_joomla
+inurl:/components/com_content
+inurl:/components/com_users
+inurl:/components/com_search
+inurl:/components/com_contact
+inurl:/components/com_newsfeeds
+inurl:/components/com_weblinks
+inurl:/components/com_banners
+inurl:/plugins/system/
+inurl:/plugins/content/
+inurl:/plugins/user/
+inurl:/plugins/authentication/
+inurl:/plugins/editors/
+inurl:/plugins/search/
+inurl:/plugins/extension/
+inurl:/modules/mod_
+inurl:/cache/com_
+inurl:/logs/joomla
+inurl:/tmp/joomla
+inurl:/backups/joomla
+intitle:"Joomla! Web Installer"
+intitle:"Joomla! Administration"
+intitle:"Joomla! Login"
+filetype:php configuration
+filetype:php "JConfig"
+
+# =============================================================
+# 20. GENERIC VULNERABILITY SCANNING
+# =============================================================
+intitle:"Test Page for Apache"
+intitle:"Welcome to Nginx"
+intitle:"Welcome to IIS"
+intitle:"Apache Tomcat"
+intitle:"Welcome to Jetty"
+intitle:"Directory listing for"
+intitle:"Parent Directory" "Index of"
+intitle:"Index of" "parent directory"
+intitle:"Index of" ".htaccess"
+intitle:"Index of" ".htpasswd"
+intitle:"Index of" "etc"
+intitle:"Index of" "bin"
+intitle:"Index of" "home"
+intitle:"Index of" "usr"
+intitle:"Index of" "var"
+intitle:"Index of" "proc"
+intitle:"Index of" "root"
+intitle:"Index of" "cgi-bin"
+intitle:"Index of" "error"
+intitle:"Index of" "icons"
+intitle:"Index of" "manual"
+intitle:"Index of" "usage"
+intitle:"Index of" "cPanel"
+intitle:"Index of" "web"
+intitle:"Index of" "site"
+intitle:"Index of" "sites"
+intitle:"Index of" "domain"
+intitle:"Index of" "domains"
+intitle:"Index of" "subdomain"
+intitle:"Index of" "vhost"
+intitle:"Index of" "vhosts"
+intitle:"Index of" "htdocs"
+intitle:"Index of" "html"
+intitle:"Index of" "public_html"
+intitle:"Index of" "wwwroot"
+intitle:"Index of" "webroot"
+intitle:"Index of" "httpdocs"
+intitle:"Index of" "httpsdocs"
+intitle:"Index of" "ssl"
+intitle:"Index of" "cert"
+intitle:"Index of" "keys"
+intitle:"Index of" "ssh"
+intitle:"Index of" "pgp"
+intitle:"Index of" "gnupg"
+intitle:"Index of" "secret"
+intitle:"Index of" "private"
+intitle:"Index of" "conf"
+intitle:"Index of" "config"
+intitle:"Index of" "settings"
+intitle:"Index of" "setup"
+intitle:"Index of" "install"
+intitle:"Index of" "temp"
+intitle:"Index of" "trash"
+intitle:"Index of" "recycle"
+intitle:"Index of" "old"
+intitle:"Index of" "new"
+intitle:"Index of" "test"
+intitle:"Index of" "demo"
+intitle:"Index of" "sample"
+intitle:"Index of" "example"
+intitle:"Index of" "dev"
+intitle:"Index of" "development"
+intitle:"Index of" "staging"
+intitle:"Index of" "production"
+intitle:"Index of" "live"
+intitle:"Index of" "archive"
+intitle:"Index of" "export"
+intitle:"Index of" "import"
+intitle:"Index of" "migration"
+intitle:"Index of" "upgrade"
+intitle:"Index of" "update"
+intitle:"Index of" "patch"
+intitle:"Index of" "fix"
+intitle:"Index of" "hotfix"
+intitle:"Index of" "servicepack"
+intitle:"Index of" "sp1"
+intitle:"Index of" "sp2"
+intitle:"Index of" "sp3"
+intitle:"Index of" "release"
+intitle:"Index of" "deploy"
+intitle:"Index of" "cluster"
+intitle:"Index of" "grid"
+intitle:"Index of" "cloud"
+intitle:"Index of" "monitor"
+intitle:"Index of" "watch"
+intitle:"Index of" "alerts"
+intitle:"Index of" "notification"
+intitle:"Index of" "report"
+intitle:"Index of" "reports"
+intitle:"Index of" "stats"
+intitle:"Index of" "statistics"
+intitle:"Index of" "analytics"
+intitle:"Index of" "metrics"
+intitle:"Index of" "health"
+intitle:"Index of" "performance"
+intitle:"Index of" "benchmark"
+intitle:"Index of" "load"
+intitle:"Index of" "stress"
+intitle:"Index of" "audit"
+intitle:"Index of" "compliance"
+intitle:"Index of" "security"
+intitle:"Index of" "vulnerability"
+intitle:"Index of" "pentest"
+intitle:"Index of" "hack"
+intitle:"Index of" "exploit"
+intitle:"Index of" "shell"
+intitle:"Index of" "cmd"
+intitle:"Index of" "terminal"
+intitle:"Index of" "console"
+intitle:"Index of" "ssh"
+intitle:"Index of" "telnet"
+intitle:"Index of" "ftp"
+intitle:"Index of" "sftp"
+intitle:"Index of" "smtp"
+intitle:"Index of" "pop"
+intitle:"Index of" "imap"
+intitle:"Index of" "dns"
+intitle:"Index of" "dhcp"
+intitle:"Index of" "ntp"
+intitle:"Index of" "ldap"
+intitle:"Index of" "radius"
+intitle:"Index of" "kerberos"
+intitle:"Index of" "snmp"
+intitle:"Index of" "nfs"
+intitle:"Index of" "samba"
+intitle:"Index of" "cifs"
+intitle:"Index of" "webdav"
+intitle:"Index of" "ajax"
+intitle:"Index of" "soap"
+intitle:"Index of" "rest"
+intitle:"Index of" "api"
+intitle:"Index of" "graphql"
+intitle:"Index of" "websocket"
+intitle:"Index of" "socket"
+intitle:"Index of" "proxy"
+intitle:"Index of" "gateway"
+intitle:"Index of" "router"
+intitle:"Index of" "switch"
+intitle:"Index of" "firewall"
+intitle:"Index of" "vpn"
+intitle:"Index of" "nat"
+intitle:"Index of" "waf"
+intitle:"Index of" "ids"
+intitle:"Index of" "ips"
+intitle:"Index of" "siem"
+intitle:"Index of" "soc"
+intitle:"Index of" "honeypot"

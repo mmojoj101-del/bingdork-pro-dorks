@@ -1,0 +1,58 @@
+# 16-cloud dorks
+filetype:env "AWS"
+filetype:env "AZURE"
+filetype:env "GCP"
+filetype:env "GOOGLE"
+filetype:env "CLOUD"
+filetype:env "S3"
+filetype:env "BUCKET"
+filetype:env "SECRET"
+filetype:env "KEY"
+filetype:yml "aws"
+filetype:yml "s3"
+filetype:yml "bucket"
+filetype:yml "cloud"
+filetype:yaml "aws"
+filetype:yaml "s3"
+filetype:yaml "bucket"
+filetype:yaml "cloud"
+filetype:json "aws"
+filetype:json "s3"
+filetype:json "bucket"
+filetype:json "cloud"
+filetype:toml "aws"
+filetype:toml "s3"
+filetype:toml "bucket"
+filetype:tf "aws"
+filetype:tf "s3"
+filetype:tf "bucket"
+filetype:tfvars "aws"
+filetype:tfvars "s3"
+filetype:tfvars "secret"
+filetype:tfstate
+intitle:"Index of" "s3"
+intitle:"Index of" ".aws"
+intitle:"Index of" ".azure"
+intitle:"Index of" ".gcp"
+intitle:"Index of" "docker"
+intitle:"Index of" "kubernetes"
+intitle:"Index of" "k8s"
+inurl:s3.amazonaws
+inurl:storage.googleapis
+inurl:blob.core.windows
+inurl:s3.us-
+inurl:s3.eu-
+inurl:s3.ap-
+inurl:s3.sa-
+inurl:s3.ca-
+inurl:digitaloceanspaces
+inurl:linodeobjects
+inurl:wasabisys
+inurl:backblazeb2
+inurl:cloudfront.net
+inurl:s3-website
+inurl:docker-compose.yml
+inurl:Dockerfile
+inurl:kubernetes
+inurl:kubeconfig
+inurl:.kube/config

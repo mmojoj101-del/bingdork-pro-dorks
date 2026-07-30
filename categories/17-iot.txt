@@ -1,0 +1,47 @@
+# 17-iot dorks
+intitle:"webcam" "live"
+intitle:"webcam" "stream"
+intitle:"webcam" "viewer"
+intitle:"webcam 7"
+intitle:"Live View / - AXIS"
+intitle:"Axis" "Camera"
+intitle:"Network Camera"
+intitle:"IP Camera"
+intitle:"DVR" "live"
+intitle:"DVR" "view"
+intitle:"Hikvision"
+intitle:"Dahua"
+intitle:"NVR"
+intitle:"RTSP"
+inurl:view/view.shtml
+inurl:view/index.shtml
+inurl:viewer/live
+inurl:control/camera
+inurl:webcam/main
+inurl:axis-cgi
+inurl:viewerframe?mode=
+inurl:mjpg/video.mjpg
+inurl:videostream.cgi
+inurl:snapshot.cgi
+inurl:cgi-bin/snapshot
+inurl:cgi-bin/video
+inurl:cgi-bin/view
+inurl:cgi-bin/webcam
+inurl:cgi-bin/camera
+inurl:top.htm inurl:current
+inurl:guestimage.html
+inurl:livestream
+inurl:liveview
+inurl:livecam
+intitle:"EvoCam"
+intitle:"WebCamXP"
+intitle:"iSPY"
+intitle:"Blue Iris"
+intitle:"Motion" "Camera"
+intitle:"ZoneMinder"
+inurl:8080/cgi-bin
+inurl:8081/cgi-bin
+inurl:554/stream
+inurl:1935/stream
+inurl:rtsp://
+inurl:rtmp://

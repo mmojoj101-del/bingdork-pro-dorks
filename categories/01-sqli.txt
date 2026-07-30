@@ -1,0 +1,38 @@
+# 01-sqli dorks
+inurl:index.php?id=
+inurl:product.php?id=
+inurl:category.php?id=
+inurl:item.php?id=
+inurl:page.php?id=
+inurl:news.php?id=
+inurl:article.php?id=
+inurl:detail.php?id=
+inurl:show.php?id=
+inurl:view.php?id=
+inurl:read.php?id=
+inurl:main.php?id=
+inurl:content.php?id=
+inurl:section.php?id=
+inurl:shop.php?id=
+inurl:cat.php?id=
+inurl:subcat.php?id=
+inurl:nav.php?id=
+inurl:thread.php?id=
+inurl:topic.php?id=
+inurl:msg.php?id=
+inurl:post.php?id=
+inurl:story.php?id=
+inurl:gallery.php?id=
+inurl:image.php?id=
+inurl:download.php?id=
+inurl:file.php?id=
+inurl:doc.php?id=
+inurl:video.php?id=
+inurl:player.php?id=
+inurl:id= &inurl:php
+inurl:option=com_ &inurl:id=
+inurl:&id= &inurl:php?id=
+inurl:&Itemid= &inurl:id=
+inurl:&catid= &inurl:php
+inurl:&pageid= &inurl:php
+intitle:"sql injection" ext:log

@@ -1,0 +1,37 @@
+# 14-server-status dorks
+intitle:"Apache Status" "Server Version"
+intitle:"Apache Status"
+intitle:"Apache Server Status"
+intitle:"Server Status"
+intitle:"Server Information"
+intitle:"PHP Error"
+intitle:"PHP Parse error"
+intitle:"PHP Fatal error"
+intitle:"Warning: mysql_connect"
+intitle:"Warning: include"
+intitle:"Warning: require"
+intitle:"Fatal error"
+intitle:"MySQL Error"
+intitle:"SQL Error"
+intitle:"ODBC Error"
+intitle:"Database Error"
+intitle:"Error Occurred"
+intitle:"Stack Trace"
+intitle:"Debug Mode"
+intitle:"Debug Output"
+intitle:"ASP.NET Error"
+intitle:"Tomcat Error"
+intitle:"404 Not Found"
+intitle:"500 Internal Server"
+intitle:"403 Forbidden"
+intitle:"401 Unauthorized"
+inurl:/server-status
+inurl:/server-info
+inurl:/status
+inurl:/debug
+inurl:/_debug
+inurl:/health
+inurl:/healthcheck
+inurl:/actuator/health
+inurl:/actuator/info
+inurl:/actuator/env

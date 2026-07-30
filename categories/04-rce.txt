@@ -1,0 +1,22 @@
+# 04-rce dorks
+inurl:cmd=
+inurl:exec=
+inurl:command=
+inurl:execute=
+inurl:shell=
+inurl:run=
+inurl:system=
+inurl:passthru=
+inurl:cmd.exe
+inurl:shell.php
+inurl:rce.php
+inurl:webshell
+inurl:backdoor
+inurl:shell.cgi
+inurl:cmd.cgi
+inurl:exec.cgi
+intitle:"index of" inurl:cgi-bin
+inurl:cgi-bin/ &ext:cgi
+inurl:phpinfo.php
+intitle:"phpinfo" ext:php
+inurl:info.php
